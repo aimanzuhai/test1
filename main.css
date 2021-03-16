@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* sidebar */
+
+#navbar{
+    position: fixed;
+    height: 100%;
+    width: 15rem;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-right: 10rem;
+    border-right-style: solid;
+    border-width: 3px;
+}
+
+#navbar header{
+    font-size: 1.75rem;
+    padding: 1rem;
+}
+
+#navbar ul li{
+    padding: 1rem;
+    border-top-style: solid;
+    border-width: 1px;
+    list-style: none;
+}
+
+/* main doc */
+#main-doc{
+    margin-left: 15rem;
+}
+
+#main-doc section{
+    margin: 0 1.25rem;
+}
+
+#main-doc section header{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+#main-doc section p, li, code{
+    margin-bottom: 1rem;
+    color: rgb(68, 68, 68);
+    white-space: pre-line;
+}
+
+#main-doc ul{
+    margin-left: 2rem;
+}
+
+#main-doc code{
+    display: block;
+    color: black;
+    padding: 1rem;
+    margin: 0 1rem 1rem;
+    background-color: #eee;
+}
+
+@media (max-width: 700px){
+    #navbar{
+        position: static;
+        border: none;
+        width: 100%;
+        height: auto;
+    }
+    
+    #navbar header{
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+    #navbar ul{
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+    #navbar ul li{
+        padding: 1rem;
+        border: none;
+        list-style: none;
+    }
+
+    #main-doc{
+        margin-left: 0;
+    }
+}
